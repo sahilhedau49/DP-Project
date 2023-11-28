@@ -13,7 +13,10 @@ class DiscountedCartDecorator implements Cart {
     @Override
     public void displayCart() {
         System.out.println("\nCart Summary:");
-        System.out.println("Discount Applied!");
+        double total = cart.calculateTotal();
+        if (total > 100) {
+            System.out.println("Discount Applied!");
+        }
         cart.displayCart();
         double totalAmount = this.calculateTotal();
         System.out.println("Total (After discount): " + totalAmount);
@@ -23,9 +26,9 @@ class DiscountedCartDecorator implements Cart {
     @Override
     public double calculateTotal() {
         double total = cart.calculateTotal();
-        if (total > 200) {
+        if (total > 100) {
             return total * 0.95;
-        } else if (total > 400) {
+        } else if (total > 200) {
             return total * 0.9;
         }
         return total;
