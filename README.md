@@ -36,13 +36,3 @@ This console-based Java application allows users to order food items, add them t
 2. **Decorator Design Pattern**: Implemented through the `DiscountedCartDecorator` class to add discounts to the cart dynamically.
 
 3. **Strategy Design Pattern**: Implemented through the `PaymentStrategy` interface and its concrete implementations (`CashPayment`, `CreditCardPayment`, `PayPalPayment`) to allow flexibility in payment methods.
-
-## How to Contribute
-
-1. Fork the repository.
-2. Create a branch: `git checkout -b feature/your-feature-name`.
-3. Commit your changes: `git commit -m 'Add some feature'`.
-4. Push to the branch: `git push origin feature/your-feature-name`.
-5. Submit a pull request.
-
-Feel free to contribute and enhance the functionality of the application!
